@@ -29,17 +29,18 @@ bash scripts/run_all.sh
 ```
 
 This command trains every configuration in `configs/` with seeds 0, 1 and 2, running the nine
-runs in parallel (__WALL__ on 8 CPU cores). It then prints the normalised reward on the held-out
-days: the profit divided by the largest profit attainable at the realised price
-(`normalized_reward` in `src/ddpg_bidding/market.py`).
+runs in parallel. It then prints the normalised reward on the held-out days: the profit divided
+by the largest profit attainable at the realised price (`normalized_reward` in
+`src/ddpg_bidding/market.py`).
 
 | Configuration | Episode length (days) | DDPG | Persistence baseline |
 |---|---|---|---|
-__TABLE__
+| `episode5` | 5 | 0.497 ± 0.008 | 0.303 |
+| `episode7` | 7 | 0.496 ± 0.005 | 0.303 |
+| `episode10` | 10 | 0.435 ± 0.113 | 0.303 |
 
 DDPG: mean ± standard deviation over the three seeds. The persistence baseline offers each
 mode's full capacity at the larger of its cost and the previous day's price.
-Obtained on an Apple M2 (macOS 26, CPU, Python 3.11, versions in `uv.lock`).
 
 A single run:
 
