@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "ddpg-day-ahead-bidding"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Di Persio
+    given-names: Luca
+  - family-names: Garbelli
+    given-names: Matteo
+  - family-names: Giordano
+    given-names: Luca Maria
+preferred-citation:
+  type: article
+  title: "Reinforcement learning for bidding strategy optimization in day-ahead energy market"
+  authors:
+    - family-names: Di Persio
+      given-names: Luca
+    - family-names: Garbelli
+      given-names: Matteo
+    - family-names: Giordano
+      given-names: Luca Maria
+  journal: "Energy Economics"
+  volume: 149
+  start: 108673
+  year: 2025
+  doi: "10.1016/j.eneco.2025.108673"

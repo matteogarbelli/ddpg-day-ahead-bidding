@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddpg-day-ahead-bidding"
+version = "1.0.0"
+description = "DDPG bidding strategy for a single supplier in the Italian day-ahead electricity market"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Luca Di Persio" },
+  { name = "Matteo Garbelli" },
+  { name = "Luca Maria Giordano" },
+]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "torch>=2.1",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
