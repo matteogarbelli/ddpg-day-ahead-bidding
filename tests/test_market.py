@@ -1,8 +1,15 @@
 import numpy as np
 import pytest
 
-from ddpg_bidding.market import (accepted_volume, dispatch, max_profit, normalized_reward, profit,
-                                 project_curve, step_bounds)
+from ddpg_bidding.market import (
+    accepted_volume,
+    dispatch,
+    max_profit,
+    normalized_reward,
+    profit,
+    project_curve,
+    step_bounds,
+)
 
 COSTS = [10.0, 30.0, 60.0]
 CAPS = [30.0, 200.0, 800.0]

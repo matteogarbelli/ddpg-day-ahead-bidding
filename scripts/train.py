@@ -27,6 +27,7 @@ def main():
     parser.add_argument("--episodes", type=int, default=None, help="override train.n_episodes")
     parser.add_argument("--eval-every", type=int, default=50)
     args = parser.parse_args()
+    torch.set_num_threads(1)  # same arithmetic as scripts/run_all.sh
 
     cfg = load_config(args.config)
     if args.episodes is not None:

@@ -5,8 +5,9 @@ Usage::
     python scripts/plot.py runs/episode5_seed0 [--day 2020-06-15]
 
 Writes to <run>/figures/: reward.png (normalised reward per episode and its 10-episode
-moving average; the y-axis starts at the 1st percentile of the episode rewards), losses.png (critic and actor loss per episode) and offering_curve.png
-(the policy's curve for one test day, with the realised PUN).
+moving average; the y-axis starts at the 1st percentile of the episode rewards),
+losses.png (critic and actor loss per episode) and offering_curve.png (the policy's curve
+for one test day, with the realised PUN).
 """
 
 import argparse

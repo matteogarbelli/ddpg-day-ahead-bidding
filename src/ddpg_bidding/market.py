@@ -37,7 +37,7 @@ def dispatch(quantity: float, costs, capacities) -> np.ndarray:
 def profit(prices, volumes, pun: float, costs, capacities, pricing: str = "bid") -> float:
     """Profit of the offering curve given the realised PUN.
 
-    ``pricing="bid"``: revenue sum_i P_i V_i 1{P_i <= PUN} (Eq. (reward) of the article).
+    ``pricing="bid"``: revenue sum_i P_i V_i 1{P_i <= PUN}.
     ``pricing="clearing"``: revenue PUN * Q.
     The production cost is sum_k C_k q_k, with q_k the merit-order dispatch of Q.
     """

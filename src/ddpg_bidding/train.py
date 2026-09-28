@@ -1,4 +1,4 @@
-"""Training loop (Algorithm 1 of the article)."""
+"""DDPG training loop."""
 
 import json
 import random
@@ -113,5 +113,5 @@ def load_run(run_dir) -> tuple:
     cfg = load_config(run_dir / "config.json")
     seed = json.loads((run_dir / "config.json").read_text())["seed"]
     setup = build(cfg, seed)
-    setup.agent.actor.load_state_dict(torch.load(run_dir / "actor.pt"))
+    setup.agent.actor.load_state_dict(torch.load(run_dir / "actor.pt", weights_only=True))
     return cfg, setup

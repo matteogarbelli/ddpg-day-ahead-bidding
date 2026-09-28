@@ -2,7 +2,9 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the article below."
 title: "ddpg-day-ahead-bidding"
 version: 1.0.0
+date-released: 2026-09-28
 license: MIT
+repository-code: "https://github.com/matteogarbelli/ddpg-day-ahead-bidding"
 authors:
   - family-names: Di Persio
     given-names: Luca
